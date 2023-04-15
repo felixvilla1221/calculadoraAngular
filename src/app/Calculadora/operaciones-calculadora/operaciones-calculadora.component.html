@@ -1,0 +1,47 @@
+<div class="alert alert-primary text-center" role="alert">
+    <h4>{{operacion}}</h4>
+</div>
+
+
+<form>
+
+<div class="form-check-inline">
+ 
+Digite Primer Numero: <input  type="number"   [(ngModel)]="numero1"> <br/>   
+
+</div>
+
+<input class="form-check-inline" type="button" #numero value="Enviar" (click)="llamarNumero1(numero.valueAsNumber)">  
+
+
+<div class="form-check-inline">
+
+Digite Segundo Numero: <input type="number"  [(ngModel)]="numero2">   
+
+</div>
+
+<input class="form-check-inline"  type="button" #numero value="Enviar" (click)="llamarNumero2(numero.valueAsNumber)">
+
+
+<div class="form-check text-center"><br/>
+
+<p class="form-control"> Numero 1 : {{numero.valueAsNumber}}</p><br/>  
+
+<p class="form-control"> Numero 2 : {{numero.valueAsNumber}}</p>
+
+</div>
+
+
+<div class="form-check-inline  col-4">
+
+ <input class="col-auto" type="button" value="Suma" style="margin-left:8%;">   
+
+ <input class="col-auto" type="button" value="Resta" style="margin-left:9%;"> 
+ 
+ <input class="col-auto" type="button" value="Multiplicacion" style="margin-left:7%;"> 
+
+</div>
+
+
+    
+</form>
